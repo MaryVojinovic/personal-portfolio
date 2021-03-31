@@ -1,0 +1,380 @@
+   
+   CSS
+   
+    @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oranienbaum', serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9d29d;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+}
+
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #b35340;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content .content-bx h2 {
+    font-size: 2em;
+    color: fff;
+    line-height: 1em;
+    position: relative;
+    justify-content: center;
+    position: center;
+}
+
+
+
+
+.content .content-bx a {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    background: #5e5b59;
+    opacity: 0.5;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.content .content-bx a:hover {
+    background-color: #913e2d;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+header.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width:600px) {
+    header {
+        padding: 10px 12px;
+    }
+    section {
+        padding: 30px;
+    }
+    .content .content-bx h2 {
+        font-size: 1.5em;
+    }
+    .content .content-bx p {
+        font-size: 1.5em;
+    }
+    header .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.picture {
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+section {
+    padding: 100px;
+}
+
+.about {
+    background-color: #d3d3d3!important;
+    border: 1px solid #fff;
+    box-shadow: black;
+}
+
+#about {
+    background-color: #f1dfd1;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.row {
+    position: relative;
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 60%;
+}
+
+.titleText {
+    font-size: 3em;
+    font-weight: 300;
+    padding-bottom: 5cm;
+}
+
+.titleText span {
+    color: #913e2d;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 6cm;
+    display: inline-block;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-left: 5em;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+/* Left and right column */
+
+.column.side {
+    width: 20%;
+}
+
+
+/* Middle column */
+
+.column.middle {
+    width: 40%;
+}
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #913e2d;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    list-style: none;
+}
+
+.sci {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sci li a {
+    position: relative;
+    display: flexbox;
+    margin-right: 50px;
+    filter: invert(0);
+}
+
+@media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #b35340;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #913e2d;
+}
+
+
+/* contact section */
+
+.container {
+    border-radius: 5px;
+    background-color: #f1dfd1;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+    padding: 10px;
+}
+
+
+
+
+.column {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
